@@ -8,10 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class PracticaComponent implements OnInit {
 
   valor = 123456789;
-  cantidadDecimalInput = '';
-  cantidadDecimalInput1 = '';
-  cantidadDecimalInput2 = '';
-  cantidadDecimalInput3 = '';
 
   // cantidad = numero decimal a convertir.
   cantidadDecimal = 200;
