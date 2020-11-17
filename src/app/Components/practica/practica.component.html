@@ -1,0 +1,62 @@
+<div class="containerPractica">
+    <div class="numerosaLetras">
+        <h4 class="text-center">Conversion de numeros a letras</h4>
+        <h5>Pipe</h5>
+        <p>
+            Valor: {{valor}} <b>Convertido a letras:</b> {{ valor | numerosLetras}}
+        </p>
+    </div>
+    <br>
+
+    <div class="binarios">
+        <h4 class="text-center">Conversion de decimales a binarios</h4>
+        <h5>Pipe</h5>
+        <p>
+            Valor: {{cantidadDecimal}} <b>Convertido a binario:</b> {{ cantidadDecimal | decimalBinario}}
+        </p>
+
+        <h5>Metodo / Funcion (toString)</h5>
+        <p>
+            Valor: {{cantidadDecimalDos}} <b>Convertido a binario:</b> {{ cantidadDecimalDos.toString(2)}}
+        </p>
+    </div>
+    <br>
+
+    <div class="ocatales">
+        <h4 class="text-center">Conversion de decimales a Octales</h4>
+        <h5>Pipe</h5>
+        <p>
+            Valor: {{cantidadDecimal}} <b>Convertido a octal:</b> {{ cantidadDecimal | decimalOctal}}
+        </p>
+
+        <h5>Metodo / Funcion (toString)</h5>
+        <p>
+            Valor: {{cantidadDecimalDos}} <b>Convertido a octal:</b> {{ cantidadDecimalDos.toString(8)}}
+        </p>
+    </div>
+    <br>
+
+    <div class="hexadecimal">
+        <h4 class="text-center">Conversion de decimales a hexadecimal</h4>
+        <h5>Pipe</h5>
+        <p>
+            Valor: {{cantidadDecimal}} <b>Convertido a hexadecimal:</b> {{ cantidadDecimal | decimalHexadecimal}}
+        </p>
+
+        <h5>Metodo / Funcion (toString)</h5>
+        <p>
+            Valor: {{cantidadDecimalDos}} <b>Convertido a hexadecimal:</b> {{ cantidadDecimalDos.toString(16) | uppercase}}
+        </p>
+    </div>
+    <br>
+
+    <div class="romanos">
+        <h4 class="text-center">Conversion de decimales a romanos</h4>
+        <h5>Pipe</h5>
+        <p>
+            Valor: {{cantidadDecimal}} <b>Convertido a romanos:</b> {{ cantidadDecimal | numerosRomanos}}
+        </p>
+    </div>
+    <br>
+
+</div>

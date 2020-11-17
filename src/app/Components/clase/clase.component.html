@@ -1,0 +1,77 @@
+<div class="upeLow">
+    <p>{{'Hola, buenos dias' | uppercase}}</p>
+    <p>{{ title | uppercase}}</p>
+</div>
+<br>
+
+<div class="nombre">
+    <p>Nombre del alumno en mayusculas: {{nombre | uppercase}}</p>
+    <p>Nombre del alumno en minusculas: {{nombre | lowercase}}</p>
+</div>
+<br>
+
+<div class="saldo">
+    <ul>
+        <li>El saldo pendiente es: {{ saldo | currency:'#'}} </li>
+        <li>El saldo pendiente es: {{ saldo | number:'1.0-2'}}</li>
+        <li>El saldo pendiente es: {{ saldo | number:'1.1-1'}} //123.0 </li>
+        <li>El saldo pendiente es: {{ saldo | number:'1.0-0'}} //12.3456677</li>
+        <li>El saldo pendiente es: {{ 3.1416 | number:'1.0-2'}} //1.2345</li>
+        <li>El saldo pendiente es: {{ 3.1416 | number:'1.0-2' | currency : '€'}}</li>
+    </ul>
+</div>
+<br>
+<div class="dias">
+    <p>Los dias laborales son: {{ dias | slice:0:5 }}</p>
+    <p>Los dias no laborales son: {{ dias | slice:5:7 }}</p>
+</div>
+<br>
+
+<div class="articulosJSON">
+    <p>Los articulos en formato JSON son:
+        <br> {{ articulos| json }}</p>
+</div>
+<br>
+
+<div class="fecha">
+    <p>Fecha de hoy: {{ diaDeHoy | date: 'd/M/y'}}</p>
+</div>
+<br>
+
+<div class="numerosLetras">
+    <h3>Números en Inglés</h3>
+    <ul>
+        <li *ngFor="let valor of vector">
+            {{valor | letras:'ingles'}}
+        </li>
+    </ul>
+    <h3>Números en Español</h3>
+    <ul>
+        <li *ngFor="let valor of vector">
+            {{valor | letras:'español'}}
+        </li>
+    </ul>
+</div>
+<br>
+
+<div class="cantidad">
+    <p>
+        Cantidad: {{ saldo.toString() | currency | cantidad : '123456'}}
+    </p>
+</div>
+<br>
+
+<div class="pesosMXN">
+    <p>
+        Precio en pesos mexicanos: {{precio | dolarPeso: tasaCambio | currency: '$'}}
+    </p>
+</div>
+<br>
+
+<div class="porcentaje">
+    <p>
+        Porcentaje: {{0.59 | percent}}
+    </p>
+</div>
+
+<hr>
